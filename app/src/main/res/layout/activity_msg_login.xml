@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wooks.msglogin.msgLogin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="마셔 게임"
+        android:textSize="80dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/input_ID"
+        android:layout_centerHorizontal="true"
+        android:hint="닉네임"
+        android:layout_marginTop="151dp"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/input_PW"
+        android:hint="비밀번호"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/input_ID"
+        android:layout_alignStart="@+id/input_ID" />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="Log in"
+        android:id="@+id/loginButton"
+        android:textAllCaps="false"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/input_PW"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/Auto_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동로그인"
+        android:layout_below="@+id/input_PW"
+        android:layout_alignLeft="@+id/input_PW"
+        android:layout_alignStart="@+id/input_PW"
+        android:layout_marginTop="14dp" />
+
+
+</RelativeLayout>
